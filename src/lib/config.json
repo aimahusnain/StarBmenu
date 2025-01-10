@@ -1,0 +1,52 @@
+{
+    "site": {
+      "title": "Starbucks Menu With Prices​ 2025 | USA",
+      "base_url": "starbmenu.com",
+      "base_path": "/",
+      "trailing_slash": false,
+      "favicon": "/images/favicon.ico",
+      "logo": "/images/logo.svg",
+      "logo_darkmode": "/images/logo.svg",
+      "logo_width": "100",
+      "logo_height": "100",
+      "logo_text": "Starbmenu"
+    },
+  
+    "settings": {
+      "search": true,
+      "sticky_header": true,
+      "theme_switcher": true,
+      "default_theme": "light",
+      "pagination": 2,
+      "summary_length": 200,
+      "blog_folder": "blog", 
+      "default_language": "en",
+      "disable_languages": [],
+      "default_language_in_subdir": false
+    },
+  
+    "params": {
+      "contact_form_action": "#",
+      "copyright": "Designed And Developed by devkins.dev"
+    },
+  
+    "navigation_button": {
+      "enable": true,
+      "label": "Get Started",
+      "link": "/contact"
+    },
+  
+    "disqus": {
+      "enable": true,
+      "shortname": "devkins",
+      "settings": {}
+    },
+  
+    "metadata": {
+      "meta_author": "devkins",
+      "meta_image": "/images/og-image.png",
+      "meta_description": "Explore the Starbucks menu with prices, featuring a wide variety of beverages, breakfast items, and snacks. Find your favorites and plan your next visit!"
+    }
+  }
+  
+  
