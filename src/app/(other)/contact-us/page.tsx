@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
-import Head from 'next/head';
-import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import Head from 'next/head';
+import React, { useState } from 'react';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
