@@ -29,8 +29,6 @@ interface MenuCategory {
   items: MenuItem[];
 }
 
-interface Category extends MenuCategory {}
-
 const CategoryPageComponent: React.FC<{ name: string; link: string }> = ({ name, link }) => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [filteredMenu, setFilteredMenu] = useState<MenuItem[]>([]);
