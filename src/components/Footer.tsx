@@ -21,22 +21,22 @@ const footerData = {
     },
     {
       platform: "Facebook",
-      url: "https://www.facebook.com/Starbucks/",
+      url: "https://facebook.com/Starbucks/",
       icon: FaFacebookF
     },
     {
       platform: "Pinterest",
-      url: "https://www.pinterest.com/starbucks/",
+      url: "https://pinterest.com/starbucks/",
       icon: FaPinterestP
     },
     {
       platform: "Instagram",
-      url: "https://www.instagram.com/starbucks/",
+      url: "https://instagram.com/starbucks/",
       icon: FiInstagram
     },
     {
       platform: "YouTube",
-      url: "https://www.youtube.com/starbucks",
+      url: "https://youtube.com/starbucks",
       icon: GrYoutube
     }
   ],

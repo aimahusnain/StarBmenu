@@ -6,6 +6,7 @@ import ProductLayout from "@/components/StarbucksProduct/ProductLayout";
 import { Menu, Product } from "@/lib/menuItems";
 import { AnimatePresence, motion } from "framer-motion";
 import { Search, X } from "lucide-react";
+import Head from "next/head";
 import React, { useEffect, useState } from "react";
 
 const MenuPage: React.FC = () => {
@@ -155,6 +156,11 @@ const MenuPage: React.FC = () => {
 
   return (
     <div id="Menu">
+      <Head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6211300056502877"
+     crossOrigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-6211300056502877"></meta>
+        </Head>
       {/* Desktop Navigation */}
       <HeroSection />
 

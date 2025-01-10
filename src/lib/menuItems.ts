@@ -137,7 +137,7 @@ export type Size = {
                   ],
                 },
                 {
-                  name: "Starbucks Odyssey Blend® Clover Vertica™",
+                  name: "Odyssey Blend® Clover Vertica™",
                   image: "/Starbucks Odyssey Blend® Clover Vertica™.avif",
                   link: "starbucks-0dyssey-blend-clover-vertica",
                   sizes: [
@@ -622,7 +622,7 @@ export type Size = {
                   ],
                 },
                 {
-                  name: "Starbucks® Blonde Vanilla Latte",
+                  name: " Blonde Vanilla Latte",
                   image: "/Starbucks® Blonde Vanilla Latte.avif",
                   link: "starbucks-blonde-vanilla-latte",
                   sizes: [
@@ -980,7 +980,7 @@ export type Size = {
                   link: "vanilla-sweet-cream-cold-brew",
                 },
                 {
-                  name: "Starbucks® Cold Brew Coffee",
+                  name: " Cold Brew Coffee",
                   image: "/Starbucks® Cold Brew Coffee.avif",
                   sizes: [
                     {
@@ -1108,7 +1108,7 @@ export type Size = {
               category: "Iced Coffees",
               products: [
                 {
-                  name: "Starbucks® Iced Coffee Blend",
+                  name: " Iced Coffee Blend",
                   image: "/Starbucks® Iced Coffee.jpg",
                   sizes: [
                     {
@@ -1139,7 +1139,7 @@ export type Size = {
                   link: "starbucks-iced-coffee-blend",
                 },
                 {
-                  name: "Starbucks® Iced Coffee Blend Clover Vertica™",
+                  name: " Iced Coffee Blend Clover Vertica™",
                   image: "/Starbucks® Iced Coffee.jpg",
                   sizes: [
                     {
@@ -1391,7 +1391,7 @@ export type Size = {
                   link: "iced-lavender-oatmilk-latte",
                 },
                 {
-                  name: "Iced Starbucks® Blonde Vanilla Latte",
+                  name: "Iced Blonde Vanilla Latte",
                   image: "/Iced Starbucks® Blonde Vanilla Latte.avif",
                   sizes: [
                     {
@@ -1555,7 +1555,7 @@ export type Size = {
           ],
         },
         {
-          name: "Starbucks Refreshers® Beverages",
+          name: "Refreshers® Beverages",
           image: "/Strawberry Açaí Lemonade Starbucks Refreshers® Beverage.avif",
           link: "starbucks-refreshers-beverages",
           subItems: [
@@ -1563,7 +1563,7 @@ export type Size = {
               category: "Seasonal Exclusives",
               products: [
                 {
-                  name: "Summer-Berry Lemonade Starbucks Refreshers® Beverage",
+                  name: "Summer-Berry Lemonade Refreshers® Beverage",
                   image: "/Summer-Berry Lemonade Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -1594,7 +1594,7 @@ export type Size = {
                   link: "summer-berry-lemonade-starbucks refreshers-beverage",
                 },
                 {
-                  name: "Summer Skies Drink Starbucks Refreshers® Beverage",
+                  name: "Summer Skies Drink  Refreshers® Beverage",
                   image: "/Summer Skies Drink Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -1625,7 +1625,7 @@ export type Size = {
                   link: "summer-skies-drink-starbucks-refreshers-beverage",
                 },
                 {
-                  name: "Summer-Berry Starbucks Refreshers® Beverage",
+                  name: "Summer-Berry Refreshers® Beverage",
                   image: "/Summer-Berry Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -1661,7 +1661,7 @@ export type Size = {
               category: "Lemonades and Frozen",
               products: [
                 {
-                  name: "Strawberry Açaí Lemonade Starbucks Refreshers® Beverage",
+                  name: "Strawberry Açaí Lemonade Refreshers® Beverage",
                   image: "/Strawberry Açaí Lemonade Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -1692,7 +1692,7 @@ export type Size = {
                   link: "strawberry-açaí-lemonade-starbucks-refreshers-beverage",
                 },
                 {
-                  name: "Frozen Mango Dragonfruit Lemonade Starbucks Refreshers® Beverage",
+                  name: "Frozen Mango Dragonfruit Lemonade  Refreshers® Beverage",
                   image: "/Frozen Mango Dragonfruit Lemonade Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -1723,7 +1723,7 @@ export type Size = {
                   link: "frozen-mango-dragonfruit-lemonade-starbucks-refreshers-beverage",
                 },
                 {
-                  name: "Frozen Pineapple Passionfruit Lemonade Starbucks Refreshers® Beverage",
+                  name: "Frozen Pineapple Passionfruit Lemonade Refreshers® Beverage",
                   image: "/Frozen Pineapple Passionfruit Lemonade Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -1754,7 +1754,7 @@ export type Size = {
                   link: "frozen-pineapple-passionfruit-lemonade-starbucks-refreshers-beverage",
                 },
                 {
-                  name: "Frozen Strawberry Açaí Lemonade Starbucks Refreshers® Beverage",
+                  name: "Frozen Strawberry Açaí Lemonade Refreshers® Beverage",
                   image: "/Frozen Strawberry Açaí Lemonade Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -1790,7 +1790,7 @@ export type Size = {
               category: "Coconutmilk Collection",
               products: [
                 {
-                  name: "Pink Drink Starbucks Refreshers® Beverage",
+                  name: "Pink Drink Refreshers® Beverage",
                   image: "/Pink Drink Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -1821,7 +1821,7 @@ export type Size = {
                   link: "pink-drink-starbucks-refreshers-reverage",
                 },
                 {
-                  name: "Dragon Drink® Starbucks Refreshers® Beverage",
+                  name: "Dragon Drink® Refreshers® Beverage",
                   image: "/Dragon Drink® Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -1852,7 +1852,7 @@ export type Size = {
                   link: "dragon-drink-starbucks-refreshers-beverage",
                 },
                 {
-                  name: "Paradise Drink Starbucks Refreshers® Beverage",
+                  name: "Paradise Drink Refreshers® Beverage",
                   image: "/Paradise Drink Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -1883,7 +1883,7 @@ export type Size = {
                   link: "paradise-drink-starbucks-refreshers-beverage",
                 },
                 {
-                  name: "Dragon Drink® Starbucks Refreshers® Beverage with Oleato Golden Foam™",
+                  name: "Dragon Drink Refreshers® Beverage with Oleato Golden Foam™",
                   image: "/Dragon Drink® Starbucks Refreshers® Beverage with Oleato Golden Foam™.avif",
                   sizes: [
                     {
@@ -1914,7 +1914,7 @@ export type Size = {
                   link: "dragon-drink-starbucks-refreshers-beverage-with-oleato-golden-foam",
                 },
                 {
-                  name: "Paradise Drink Starbucks Refreshers® Beverage with Oleato Golden Foam™",
+                  name: "Paradise Drink Refreshers® Beverage with Oleato Golden Foam™",
                   image: "/Paradise Drink Starbucks Refreshers® Beverage with Oleato Golden Foam™.avif",
                   sizes: [
                     {
@@ -1981,7 +1981,7 @@ export type Size = {
                   link: "strawberry-açaí-starbucks-refreshers-beverage",
                 },
                 {
-                  name: "Mango Dragonfruit Starbucks Refreshers® Beverage",
+                  name: "Mango Dragonfruit Refreshers® Beverage",
                   image: "/Mango Dragonfruit Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -2012,7 +2012,7 @@ export type Size = {
                   link: "mango-dragonfruit-tarbucks-Refreshers-Beverage",
                 },
                 {
-                  name: "Pineapple Passionfruit Starbucks Refreshers® Beverage",
+                  name: "Pineapple Passionfruit Refreshers® Beverage",
                   image: "/Pineapple Passionfruit Starbucks Refreshers® Beverage.avif",
                   sizes: [
                     {
@@ -3811,7 +3811,7 @@ export type Size = {
                   link: "",
                 },
                 {
-                  name: "Starbucks™ Baya Energy Raspberry Lime",
+                  name: " Baya Energy Raspberry Lime",
                   image: "/Starbucks™ Baya Energy Raspberry Lime.avif",
                   sizes: [
                     {
@@ -4370,7 +4370,7 @@ export type Size = {
                   link: "",
                 },
                 {
-                  name: "Starbucks Butter Popcorn",
+                  name: "Butter Popcorn",
                   image: "/Starbucks Butter Popcorn.avif",
                   calories: 150,
                   price: "$1.50",
@@ -4454,7 +4454,7 @@ export type Size = {
               category: "Blonde Roast",
               products: [
                 {
-                  name: "Starbucks® Green Apron Blend™",
+                  name: " Green Apron Blend™",
                   image: "/Starbucks® Green Apron Blend™.avif",
                   size: "1lb",
                   price: "$13.95",
@@ -4468,7 +4468,7 @@ export type Size = {
                   link: "",
                 },
                 {
-                  name: "Starbucks® Blonde Espresso Roast",
+                  name: " Blonde Espresso Roast",
                   image: "/Starbucks® Blonde Espresso Roast.avif",
                   size: "1lb",
                   price: "$13.95",
@@ -4480,7 +4480,7 @@ export type Size = {
               category: "Medium Roast",
               products: [
                 {
-                  name: "Starbucks Sirens Blend",
+                  name: "Sirens Blend",
                   image: "/Starbucks Siren’s Blend™.avif",
                   size: "1lb",
                   price: "$13.95",
@@ -4508,7 +4508,7 @@ export type Size = {
                   link: "",
                 },
                 {
-                  name: "Starbucks Odyssey Blend® 2025",
+                  name: "Odyssey Blend® 2025",
                   image: "/Starbucks Odyssey Blend® 2025.avif",
                   size: "1lb",
                   price: "$15.95",
@@ -4520,7 +4520,7 @@ export type Size = {
               category: "Dark Roast",
               products: [
                 {
-                  name: "Starbucks® Anniversary Blend 2025",
+                  name: " Anniversary Blend 2025",
                   image: "/Starbucks® Anniversary Blend 2024.avif",
                   size: "1lb",
                   price: "$15.95",
@@ -4603,7 +4603,7 @@ export type Size = {
               category: "Medium Roast",
               products: [
                 {
-                  name: "Starbucks VIA® Instant Pike Place® Roast",
+                  name: "VIA® Instant Pike Place® Roast",
                   image: "/Starbucks VIA® Instant Pike Place® Roast.avif",
                   price: "$11.95",
                   link: "",
