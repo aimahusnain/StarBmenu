@@ -54,7 +54,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="w-full mt-[100px] my-6 border max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
       <Head>
-        <link rel="canonical" href="https://starbucks-menu-with-prices.net/contact-us" />
+        <link rel="canonical" href="https://starbmenu.com/contact-us" />
       </Head>
       <div className="mb-6">
         <h1 className='text-center text-3xl font-bold'>Contact Us</h1>

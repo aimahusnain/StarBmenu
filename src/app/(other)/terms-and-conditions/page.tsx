@@ -16,9 +16,6 @@ export const metadata: Metadata = {
 const TermsAndConditions = () => {
   return (
     <div className="max-w-4xl px-[20px]  mx-auto py-4 mt-6">
-      <Head>
-        <link rel="canonical" href="https://starbucks-menu-with-prices.net/terms-and-conditions" />
-      </Head>
       <h1 className="text-center font-bold text-3xl mb-3">
         Terms and Conditions
       </h1>
