@@ -263,7 +263,7 @@ const Footer = () => {
               <span className="text-sm text-center md:text-left text-zinc-500">
                 {footerData.footer.copyright}
               </span>
-              <ul className="flex items-center text-center gap-9 mt-4 lg:mt-0">
+              <ul className="flex items-center text-center gap-9 mt-4 lg:mt-0 flex-wrap">
                 {footerData.footer.bottomLinks.map((link, index) => (
                   <li key={index}>
                     <Link

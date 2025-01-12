@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import ProductLayout from "@/components/StarbucksProduct/ProductLayout";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useRouter } from 'next/navigation';
 
 interface Product {
   name: string;
@@ -34,13 +35,16 @@ const CategoryPageComponent: React.FC<{ name: string; link: string }> = ({ name,
   const [filteredMenu, setFilteredMenu] = useState<MenuItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [menu, setMenu] = useState<MenuCategory | null>(null);
+  const router = useRouter(); // Initialize useRouter
 
   useEffect(() => {
+    // Trigger a router refresh when the page loads
+    router.refresh();
+
     const fetchMenu = async () => {
       try {
         const { Menu } = await import("@/lib/menuItems");
         const selectedCategory = Menu.find((category) => category.category === name);
-        // Add null check to handle undefined case
         setMenu(selectedCategory || null);
         setFilteredMenu(selectedCategory?.items || []);
         setLoading(false);
@@ -50,7 +54,7 @@ const CategoryPageComponent: React.FC<{ name: string; link: string }> = ({ name,
     };
 
     fetchMenu();
-  }, [name]);
+  }, [name, router]); // Include router in dependencies
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const query = event.target.value.toLowerCase();
@@ -173,25 +177,26 @@ const CategoryPageComponent: React.FC<{ name: string; link: string }> = ({ name,
           </>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-1 gap-12">
-            {filteredMenu?.map((item: MenuItem, idx: number) => (
-              <div key={idx} className="flex flex-col">
-                <h3 className="font-semibold text-2xl border-b pb-1 mb-5">
-                  {item.name} ({item.subItems?.reduce((acc: number, sub: SubItem) => acc + sub.products.length, 0)})
-                </h3>
-                <div>
-                  {item.subItems?.map((subItem: SubItem, subIdx: number) => (
-                    <div key={subIdx}>
-                      <h4 className="text-xl font-semibold mb-3">{subItem.category}</h4>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
-                        {subItem.products?.map((product: Product, prodIdx: number) => (
-                          <ProductLayout key={prodIdx} subItem={product} />
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+           {filteredMenu?.map((item: MenuItem) => (
+  <div key={item.name} className="flex flex-col">
+    <h3 className="font-semibold text-2xl border-b pb-1 mb-5">
+      {item.name} ({item.subItems?.reduce((acc: number, sub: SubItem) => acc + sub.products.length, 0)})
+    </h3>
+    <div>
+      {item.subItems?.map((subItem: SubItem) => (
+        <div key={subItem.category}>
+          <h4 className="text-xl font-semibold mb-3">{subItem.category}</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
+            {subItem.products?.map((product: Product) => (
+              <ProductLayout key={product.name} subItem={product} />
             ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+))}
+
           </div>
         )}
       </div>
