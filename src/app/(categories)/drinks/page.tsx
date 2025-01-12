@@ -1,3 +1,5 @@
+'use client'
+
 import MainCategoryPageComponent from "@/components/Category/MainCategoryPageComponent";
 import config from "@/lib/config.json";
 import { Metadata } from "next";
