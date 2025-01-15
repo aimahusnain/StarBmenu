@@ -7,9 +7,9 @@ import { Menu, Product } from "@/lib/menuItems";
 import { AnimatePresence, motion } from "framer-motion";
 import { Search, X } from "lucide-react";
 import Head from "next/head";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-const MenuPage: React.FC = () => {
+const MenuPage = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [activeCategory, setActiveCategory] = useState<string>("Drinks");
   const [activeItem, setActiveItem] = useState<string>("");
