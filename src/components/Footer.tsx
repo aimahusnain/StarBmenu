@@ -1,153 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsSpotify } from "react-icons/bs";
 import { FaFacebookF, FaPinterestP } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { GrYoutube } from "react-icons/gr";
-
-const footerData = {
-  logo: {
-    src: "/logo.svg",
-    alt: "Starbucks icon",
-    width: 120,
-    height: 100
-  },
-  description: "Starbucks boasts a varied menu that features espresso, coffee, tea, bakery items, and breakfast and lunch options. Besides their specialty coffee beverages, they also offer an assortment of snacks and baked goods for those looking for a quick treat.",
-  socialLinks: [
-    {
-      platform: "Spotify",
-      url: "https://open.spotify.com/user/starbucks",
-      icon: BsSpotify
-    },
-    {
-      platform: "Facebook",
-      url: "https://facebook.com/Starbucks/",
-      icon: FaFacebookF
-    },
-    {
-      platform: "Pinterest",
-      url: "https://pinterest.com/starbucks/",
-      icon: FaPinterestP
-    },
-    {
-      platform: "Instagram",
-      url: "https://instagram.com/starbucks/",
-      icon: FiInstagram
-    },
-    {
-      platform: "YouTube",
-      url: "https://youtube.com/starbucks",
-      icon: GrYoutube
-    }
-  ],
-  navigation: {
-    menus: {
-      title: "Menus",
-      links: [
-        {
-          text: "Full Starbucks Menu",
-          href: "/"
-        },
-      ]
-    },
-    drinks: {
-      title: "Drinks",
-      links: [
-        {
-          text: "Cold Coffees",
-          href: "/cold-coffees"
-        },
-        {
-          text: "Hot Teas",
-          href: "/hot-teas"
-        },
-        {
-          text: "Bottled Beverages",
-          href: "/bottled-beverages"
-        },
-        {
-          text: "Milk, Juice & More",
-          href: "/milk-juice-and-more"
-        },
-        {
-          text: "Iced Tea and Lemonade",
-          href: "/iced-tea-and-lemonade"
-        },
-        {
-          text: "Starbucks Refreshers® Beverages",
-          href: "/starbucks-refreshers-beverages"
-        },
-        {
-          text: "Frappuccino® Blended Beverages",
-          href: "/frappuccino-blended-beverages"
-        }
-      ]
-    },
-    foods: {
-      title: "Foods",
-      links: [
-        {
-          text: "Hot Breakfast",
-          href: "/hot-breakfast"
-        },
-        {
-          text: "Oatmeal & Yogurt",
-          href: "/oatmeal-and-yogurt"
-        },
-        {
-          text: "Bakery",
-          href: "/bakery"
-        },
-        {
-          text: "Lunch",
-          href: "/lunch"
-        },
-        {
-          text: "Snacks & Sweets",
-          href: "/snacks-and-sweets"
-        }
-      ]
-    },
-    atHomeCoffee: {
-      title: "At Home Coffee",
-      links: [
-        {
-          text: "Whole Bean",
-          href: "/whole-bean"
-        },
-        {
-          text: "VIA® Instant",
-          href: "/via-instant"
-        }
-      ]
-    }
-  },
-  footer: {
-    copyright: "© Starbmenu 2025, All rights reserved.",
-    bottomLinks: [
-      {
-        text: "Terms And Conditions",
-        href: "/terms-and-conditions"
-      },
-      {
-        text: "Privacy Policy",
-        href: "/privacy-policy"
-      },
-      {
-        text: "Contact Us",
-        href: "/contact-us"
-      },
-      {
-        text: "About Us",
-        href: "/about-us"
-      },
-      {
-        text: "Authors",
-        href: "/authors"
-      }
-    ]
-  }
-};
 
 const Footer = () => {
   return (
@@ -161,119 +18,281 @@ const Footer = () => {
                 href="/"
                 className="flex justify-center items-center w-full lg:w-fit text-2xl gap-4 z-40 font-bold"
               >
-            Starbmenu
+                <Image
+                  loading="lazy"
+                  decoding="async"
+                  src="/logo.svg"
+                  alt="Starbucks icon"
+                  width={120}
+                  height={100}
+                  className="mt-1"
+                ></Image>
               </Link>
-              <p className="text-sm pb-4 text-zinc-500 lg:max-w-xl text-center lg:text-left">
-                {footerData.description}
+              <p className="text-sm pb-4 text-gray-500 lg:max-w-xl text-center lg:text-left">
+                Starbucks boasts a varied menu that features espresso, coffee,
+                tea, bakery items, and breakfast and lunch options. Besides
+                their specialty coffee beverages, they also offer an assortment
+                of snacks and baked goods for those looking for a quick treat.
               </p>
-              <div className="flex mt-4 space-x-4 justify-center lg:justify-start sm:mt-0">
-                {footerData.socialLinks.map((social, index) => (
-                  <Link
-                    key={index}
-                    href={social.url}
-                    className="rounded-full px-3 py-3 bg-primary hover:bg-[#179B74] transition-all duration-400 flex justify-center items-center text-white"
-                    target="_blank"
-                    aria-label={`Starbucks on ${social.platform}`}
-                  >
-                    {React.createElement(social.icon, {size: 20 })}
-                  </Link>
-                ))}
+              <div className="flex mt-4 space-x-4 justify-center lg:justify-start sm:mt-0 ">
+                <Link
+                  href="https://open.spotify.com/user/starbucks"
+                  className="rounded-full px-3 py-2 bg-primary hover:bg-[#179B74] transition-all duration-400 flex justify-center items-center text-white"
+                  target="_blank"
+                  aria-label="Starbucks on Spotify"
+                >
+                  <BsSpotify size={20} />
+                </Link>
+                <Link
+                  href="https://www.facebook.com/Starbucks/"
+                  className="rounded-full px-3 py-2 bg-primary hover:bg-[#179B74] transition-all duration-400 flex justify-center items-center text-white"
+                  target="_blank"
+                  aria-label="Starbucks on Facebook"
+                >
+                  <FaFacebookF size={18} />
+                </Link>
+                <Link
+                  href="https://www.pinterest.com/starbucks/"
+                  className="rounded-full px-3 py-2 bg-primary hover:bg-[#179B74] transition-all duration-400 flex justify-center items-center text-white"
+                  target="_blank"
+                  aria-label="Starbucks on Pinterest"
+                >
+                  <FaPinterestP size={18} />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/starbucks/"
+                  className="rounded-full px-3 py-2 bg-primary hover:bg-[#179B74] transition-all duration-400 flex justify-center items-center text-white"
+                  target="_blank"
+                  aria-label="Starbucks on Instagram"
+                >
+                  <FiInstagram size={20} />
+                </Link>
+                <Link
+                  href="https://www.youtube.com/starbucks"
+                  className="rounded-full px-3 py-2 bg-primary hover:bg-[#179B74] transition-all duration-400 flex justify-center items-center text-white"
+                  target="_blank"
+                  aria-label="Starbucks on YouTube"
+                >
+                  <GrYoutube size={20} />
+                </Link>
               </div>
             </div>
-
-            {/* Menus Section */}
             <div className="lg:mx-auto text-center sm:text-left">
-              <span className="text-lg text-zinc-900 font-medium">
-                {footerData.navigation.menus.title}
-              </span>
+              <span className="text-lg text-gray-900 font-medium mb-4">Menus</span>
               <ul className="text-sm transition-all duration-500">
-                {footerData.navigation.menus.links.map((link, index) => (
-                  <li key={index} className="mt-4">
-                    <Link
-                      href={link.href}
-                      className="text-zinc-600 hover:text-zinc-900"
-                    >
-                      {link.text}
-                    </Link>
-                  </li>
-                ))}
+                <li className="mb-4">
+                  <Link
+                    href="/"
+                    aria-label="Starbucks Menu"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Full Starbucks Menu
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/featured"
+                    aria-label="Starbucks Featured"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Featured Menu
+                  </Link>
+                </li>
               </ul>
             </div>
-
-            {/* Drinks Section */}
             <div className="lg:mx-auto text-center sm:text-left">
-              <span className="text-lg text-zinc-900 font-medium">
-                {footerData.navigation.drinks.title}
-              </span>
+              <span className="text-lg text-gray-900 font-medium mb-4">Drinks</span>
               <ul className="text-sm transition-all duration-500">
-                {footerData.navigation.drinks.links.map((link, index) => (
-                  <li key={index} className="mt-4">
-                    <Link
-                      href={link.href}
-                      className="text-zinc-600 hover:text-zinc-900"
-                    >
-                      {link.text}
-                    </Link>
-                  </li>
-                ))}
+                <li className="mb-4">
+                  <Link
+                    href="/hot-coffees"
+                    aria-label="Starbucks   "
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                      
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/cold-coffees"
+                    aria-label="Starbucks   "
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Cold Coffees
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/hot-teas"
+                    aria-label="Starbucks Hot Teas"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Hot Teas
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/bottled-beverages"
+                    aria-label="Starbucks Bottled Beverages"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Bottled Beverages
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/milk-juice-and-more"
+                    aria-label="Starbucks Milk, Juice & More"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Milk, Juice & More
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/iced-tea-and-lemonade"
+                    aria-label="Starbucks Iced Tea and Lemonade"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Iced Tea and Lemonade
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    aria-label="Starbucks Refreshers® Beverages"
+                    href="/starbucks-refreshers-beverages"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Starbucks Refreshers® Beverages
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/frappuccino-blended-beverages"
+                    aria-label="Starbucks Frappuccino® Blended Beverages"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Frappuccino® Blended Beverages
+                  </Link>
+                </li>
               </ul>
             </div>
-
-            {/* Foods Section */}
             <div className="lg:mx-auto text-center sm:text-left">
-              <span className="text-lg text-zinc-900 font-medium">
-                {footerData.navigation.foods.title}
-              </span>
+              <span className="text-lg text-gray-900 font-medium mb-4">Foods</span>
               <ul className="text-sm transition-all duration-500">
-                {footerData.navigation.foods.links.map((link, index) => (
-                  <li key={index} className="mt-4">
-                    <Link
-                      href={link.href}
-                      className="text-zinc-600 hover:text-zinc-900"
-                    >
-                      {link.text}
-                    </Link>
-                  </li>
-                ))}
+                <li className="mb-4">
+                  <Link
+                    href="/hot-breakfast"
+                    aria-label="Starbucks Hot Breakfast"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Hot Breakfast
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/oatmeal-and-yogurt"
+                    aria-label="Starbucks Oatmeal & Yogurt"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Oatmeal & Yogurt
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/bakery"
+                    aria-label="Starbucks Bakery"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Bakery
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/lunch"
+                    aria-label="Starbucks Lucn"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Lunch
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/snack-and-sweets"
+                    aria-label="Starbucks Snacks & Sweets"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Snacks & Sweets
+                  </Link>
+                </li>
               </ul>
             </div>
-
-            {/* At Home Coffee Section */}
             <div className="lg:mx-auto text-center sm:text-left">
-              <span className="text-lg text-zinc-900 font-medium">
-                {footerData.navigation.atHomeCoffee.title}
+              <span className="text-lg text-gray-900 font-medium mb-4">
+                At Home Coffee
               </span>
               <ul className="text-sm transition-all duration-500">
-                {footerData.navigation.atHomeCoffee.links.map((link, index) => (
-                  <li key={index} className="mt-4">
-                    <Link
-                      href={link.href}
-                      className="text-zinc-600 hover:text-zinc-900"
-                    >
-                      {link.text}
-                    </Link>
-                  </li>
-                ))}
+                <li className="mb-4">
+                  <Link
+                    href="/whole-bean"
+                    aria-label="Starbucks Whole Bean"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    Whole Bean
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    href="/via-instant"
+                    aria-label="Starbucks VIA Instant"
+                    className="text-gray-600 hover:text-gray-900"
+                  >
+                    VIA® Instant
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
 
-          <div className="py-7 border-t border-zinc-200">
+          <div className="py-7 border-t border-gray-200">
             <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
-              <span className="text-sm text-center md:text-left text-zinc-500">
-                {footerData.footer.copyright}
+              <span className="text-sm text-center md:text-left text-gray-500 ">
+                ©Starbucks Menu With Prices 2024, All rights reserved.
               </span>
-              <ul className="flex items-center text-center gap-9 mt-4 lg:mt-0 flex-wrap">
-                {footerData.footer.bottomLinks.map((link, index) => (
-                  <li key={index}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-zinc-500"
-                    >
-                      {link.text}
-                    </Link>
-                  </li>
-                ))}
+              <ul className="flex items-center text-center gap-9 mt-4 lg:mt-0">
+                <li>
+                  <Link
+                    href="/terms-and-conditions"
+                    aria-label="Starbucks Terms And Conditions"
+                    className="text-sm text-gray-500"
+                  >
+                    Terms And Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/privacy-policy"
+                    aria-label="Starbucks Privacy Policy"
+                    className="text-sm text-gray-500"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact-us" className="text-sm text-gray-500">
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about-us" className="text-sm text-gray-500">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="calculateatar.com" className="text-sm text-gray-500">
+                    For Calculate your atar
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
