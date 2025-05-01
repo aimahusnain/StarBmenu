@@ -289,10 +289,11 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="calculateatar.com" className="text-sm text-gray-500">
-                    For Calculate your atar
-                  </Link>
-                </li>
+  <a href="https://calculateatar.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500">
+    For Calculate your ATAR
+  </a>
+</li>
+
               </ul>
             </div>
           </div>
