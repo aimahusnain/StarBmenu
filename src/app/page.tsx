@@ -159,7 +159,8 @@ const MenuPage = () => {
       <Head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3597647165623612"
      crossorigin="anonymous"></script>
-<meta name="google-adsense-account" content="ca-pub-3597647165623612">        </Head>
+<meta name="google-adsense-account" content="ca-pub-3597647165623612" />       
+</Head>
       {/* Desktop Navigation */}
       <HeroSection />
 
