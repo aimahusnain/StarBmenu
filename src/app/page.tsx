@@ -3,7 +3,7 @@
 import HeroSection from "@/components/Hero/Herosection";
 import MobileMenus from "@/components/Hero/MobileMenu";
 import ProductLayout from "@/components/StarbucksProduct/ProductLayout";
-import { Menu, Product } from "@/lib/menuItems";
+import { Menu, Product } from "@/lib/menuItems"; 
 import { AnimatePresence, motion } from "framer-motion";
 import { Search, X } from "lucide-react";
 import Head from "next/head";
@@ -304,6 +304,9 @@ const MenuPage = () => {
       <div className="block sm:hidden">
         <MobileMenu />
       </div>
+<a href="http://caratterispeciali10.it/" target="_blank">
+  This is the best website for caratteri speciali
+</a>
     </div>
   );
 };
