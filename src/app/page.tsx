@@ -304,9 +304,7 @@ const MenuPage = () => {
       <div className="block sm:hidden">
         <MobileMenu />
       </div>
-<a href="http://caratterispeciali10.it/" target="_blank">
-  This is the best website for caratteri speciali
-</a>
+
     </div>
   );
 };
