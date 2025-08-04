@@ -289,8 +289,11 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-  <a href="https://calculateatar.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500">
+  <a href="https://calculateatar.com" target="_blank"  className="text-sm text-gray-500">
     For Calculate your ATAR
+  </a>
+        <a href="/carraterispeciali10"  className="text-sm text-gray-500">
+    Carrateri Spciali
   </a>
 </li>
 
