@@ -289,9 +289,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-  <a href="https://calculateatar.com" target="_blank"  className="text-sm text-gray-500">
-    For Calculate your ATAR
-  </a>
+
         <a href="/carraterispeciali10"  className="text-sm text-gray-500">
     Carrateri Spciali
   </a>
